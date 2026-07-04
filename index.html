@@ -1,12 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uz">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Uzbek AI Anime Yordamchi</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <h1>hello github</h1>
+  <div class="app-shell">
+    <header class="app-header">
+      <h1>Uzbek AI Anime Yordamchi</h1>
+      <p>21-asr anime estetikasida ishlovchi, to‘liq JavaScript chat yordamchi.</p>
+    </header>
+
+    <main class="chat-card">
+      <section class="status-panel">
+        <div class="status-item">
+          <span class="dot dot--online"></span>
+          <span>Yordamchi tayyor</span>
+        </div>
+        <div class="status-item">
+          <span class="dot dot--info"></span>
+          <span>Chromeda eng yaxshi ishlaydi</span>
+        </div>
+      </section>
+
+      <section class="chat-window" id="chatWindow"></section>
+
+      <form class="controls" id="chatForm">
+        <input type="text" id="userInput" placeholder="Savolingizni yozing yoki ovozga o‘ting..." autocomplete="off" />
+        <button type="submit" class="primary-btn">Yuborish</button>
+      </form>
+
+      <div class="button-row">
+        <button id="voiceBtn" class="secondary-btn">Nutqni eshitish</button>
+        <button id="clearBtn" class="secondary-btn">Tozalash</button>
+      </div>
+    </main>
+
+    <footer class="app-footer">
+      <p>Jarvis uslubida oddiy uzbekcha AI yordamchi</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
